@@ -1,0 +1,17 @@
+---
+title: "import-data.qmd"
+author: "Satheene Michel"
+format: html
+editor: visual
+---
+
+## Import Data
+
+```{r}
+library(googlesheets4)
+library(dplyr)
+
+ read_sheet("https://docs.google.com/spreadsheets/d/13JOa_EwCRTvTpCLiBkO4fRUCpRbSgP-ekNjl7EdMNaU/edit?gid=0#gid=0") -> waste_data
+waste_data %>% 
+  glimpse()
+```
